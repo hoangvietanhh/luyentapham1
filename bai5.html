@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Type:Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe và Regulus</h2>
+</body>
+</html>
+<script>
+    let star=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe',  'Regulus']
+    let name=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    function findName(){
+        let starName=prompt();
+        for (let i=0; i < star.length; i++){
+            if (starName == star[i]){
+                return name[i];
+            }
+
+
+        }
+
+        return 'Type again';
+    }
+    alert(findName());
+</script>
